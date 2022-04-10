@@ -1,0 +1,28 @@
+Online Job portal
+Entities             Attributes
+1)Company------------a)Company_name           b)Company_id(pk)    c)Pincode               d)establishment_date   f)Website_url       g)Company_stream     h)Location
+2)Job-seeker---------a)Job-seeker_id(pk)      b)job_seeker_name   c)Email_id              d)Gender               f)Contact_details   g)Date_of_Birth      h)Password 
+3)Registration-------a)Registration_no(pk)    b)Registration_name c)Company_name          d)Date and Time        f)post              
+4)Interview----------a)Interview_Date         b)Interview_id(pk)  c)Company_name          d)Interview_Type       f)Interview_place   g)Interviewer_name   h)interviewee
+5)Job----------------a)No_Of_Vacancies        b)Company_name      c)Job_id(pk)            d)salary               f)Skills_required   g)Job_Location_city  
+6)Resume-------------a)Qualification          b)Experince         c)Skills                d)job_seeker_id(fk)
+7)Administrator------a)User_name              b)password          c)Email_id              d)Responsibilities     
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Relational Schemas                                                                                    participation Constraint                             
+1)Job-seeker----------------apply-------------------registration (One to many)
+2)Job-seeker-----------------own--------------------resume (One to One)    (Weak Entity)                Partial Partcipation                                   
+3)Job-seeker----------------gives-------------------Interview (One to Many)
+4)Company------------------offers-------------------Job (One to Many) 
+5)Administrator-----------Manage--------------------job-seeker (one to many)
+6)Administrator----------Manages--------------------Job (one to many)
+7)Administrator----------Maintain-------------------company
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Attributes
+Multivalued               Derived             Composite Attributess          Key Attributes          Required
+1)Contact_Details                              JoB-seeker_name                   
+2)Website                 Pincode              Interviewer_name
+3)Company_stream                                     
+4)Interviewer_name
+5)skills/qualification
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

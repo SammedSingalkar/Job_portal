@@ -1,0 +1,30 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3307,
+            "driver": "MySQL",
+            "name": "MySqlConnection",
+            "database": "job_portal",
+            "username": "root",
+            "password": ""
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Job Portal",
+            "database": "online_job_portal",
+            "username": "root",
+            "password": "Iamsammed@12"
+        }
+    ]
+}
